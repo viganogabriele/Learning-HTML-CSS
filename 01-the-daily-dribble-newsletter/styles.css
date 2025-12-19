@@ -1,6 +1,7 @@
 body {
-    
+    font-family: "Roboto", sans-serif;
 }
+
 
 h1 {
     text-align: center;
@@ -12,7 +13,7 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 400px;
+    width: 350px;
     height: 250px;
     border: 2px solid #121212  ;
 }
@@ -29,14 +30,30 @@ button {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 100px;
+    width: 226px;
+    height: 40px;
+    background-color: #121212;
+    color: white;
+    border: none;
+    font-weight: bold;
+}
+
+#email-input {
+    margin-top: 30px;
+    text-align: center;
+    width: 220px;
+    font-size: large;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-weight: bold;
+    border: 3px solid #121212;
 }
 
 p{
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    width: 400px;
+    width: 350px;
 }
 
 .underline {
@@ -53,6 +70,6 @@ p{
     margin-right: auto;
     border: 3px solid #121212;
     width: 500px;
-    height: 550px;
+    height: 590px;
 }
 
