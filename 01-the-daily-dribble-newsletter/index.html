@@ -14,20 +14,23 @@
 
 <body>
     <main class="box">
-        <h1>THE DAILY DRIBBLE</h1>
+        <h1 class="newsletter-title">THE DAILY DRIBBLE</h1>
 
-        <img src="assets/photo.avif" alt="Close-up of a soccer stadium during a match">
+        <img src="assets/photo.avif" alt="Close-up of a soccer stadium during a match"
+            class="responsive-content newsletter-banner">
 
-        <p>Your daily dose of soccer stories from on and off the pitch. Interviews, analyses, breaking news and more!
+        <p class="responsive-content">Your daily dose of soccer stories from on and off the pitch. Interviews, analyses,
+            breaking news and more!
         </p>
 
         <form class="newsletter-form" action="#">
             <label for="email-input" class="sr-only">Enter your email address</label>
-            <input type="email" name="email-input" id="email-input" placeholder="ENTER YOUR EMAIL" required>
-            <button type="submit">JOIN NOW</button>
+            <input type="email" name="email-input" class="field-base newsletter-input" placeholder="ENTER YOUR EMAIL"
+                required>
+            <button type="submit" class="field-base newsletter-btn">JOIN NOW</button>
         </form>
 
-        <p class="terms-text">Read our <a href="#" class="underline">terms of service</a></p>
+        <p class="terms-text responsive-content">Read our <a href="#" class="underline">terms of service</a></p>
     </main>
 
 </body>
