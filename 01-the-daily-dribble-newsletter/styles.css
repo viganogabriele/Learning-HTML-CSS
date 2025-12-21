@@ -1,3 +1,9 @@
+/* We define variables here to reuse colors easily */
+:root {
+    --primary-black: #121212;
+    --primary-white: #ffffff;
+}
+
 /* Utility class to hide labels visually but keep them for screen readers */
 .sr-only {
     position: absolute;
@@ -11,61 +17,69 @@
     border: 0;
 }
 
-body {
-    font-family: "Roboto", sans-serif;
+/* Reset default margin and padding for all elements */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-h1 {
-    text-align: center;
-    color: #121212;
+body {
+    font-family: "Roboto", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 90%;
+    max-width: 500px; 
+    min-height: 600px;
+    border: 3px solid var(--primary-black);
+    padding: 20px;
+}
+
+.newsletter-title {
+    color: var(--primary-black);
     padding-top: 10px;
 }
 
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 350px;
-    height: 250px;
-    border: 2px solid #121212  ;
+.newsletter-banner {
+    border: 2px solid var(--primary-black)  ;
 }
 
-input {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    color: black;
+.field-base {
+    line-height: 1.5;
+    width: 100%;
+    max-width: 300px;
+    padding: 10px 20px;
+    border: 3px solid var(--primary-black);
+    font-family: inherit;
+    font-size: 1rem;
 }
 
-button {
-    margin-top: 10px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 226px;
-    height: 40px;
-    background-color: #121212;
-    color: white;
-    border: none;
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+.newsletter-btn {
+    background-color: var(--primary-black);
+    color: var(--primary-white);
     font-weight: bold;
+    cursor: pointer;
 }
 
-#email-input {
-    margin-top: 30px;
+.newsletter-input {
+    color: var(--primary-black);
+    background-color: var(--primary-white);
     text-align: center;
-    width: 220px;
-    font-size: large;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    font-weight: bold;
-    border: 3px solid #121212;
-}
-
-p{
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    width: 350px;
 }
 
 .underline {
@@ -74,14 +88,11 @@ p{
 
 .terms-text {
     font-style: italic;
+    text-align: center;
 }
 
-.box {
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    border: 3px solid #121212;
-    width: 500px;
-    height: 590px;
+.responsive-content {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
 }
-
