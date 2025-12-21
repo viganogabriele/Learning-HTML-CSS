@@ -13,16 +13,22 @@
 </head>
 
 <body>
-    <div class="box">
+    <main class="box">
         <h1>THE DAILY DRIBBLE</h1>
-        <img src="assets/photo.avif" alt="Image of a stadium">
-        <p>Your daily dose of soccer stories form on and off the pitch. Interviews, analyses, breaking news and more!
-        </p>
-        <input type="email" name="email-input" id="email-input" placeholder="ENTER YOUR EMAIL">
-        <button>JOIN NOW</button>
-        <p class="terms-text">Read our <span class="underline">terms of service</span></p>
-    </div>
 
+        <img src="assets/photo.avif" alt="Close-up of a soccer stadium during a match">
+
+        <p>Your daily dose of soccer stories from on and off the pitch. Interviews, analyses, breaking news and more!
+        </p>
+
+        <form action="#">
+            <label for="email-input" class="sr-only">Enter your email address</label>
+            <input type="email" name="email-input" id="email-input" placeholder="ENTER YOUR EMAIL" required>
+            <button type="submit">JOIN NOW</button>
+        </form>
+
+        <p class="terms-text">Read our <a href="#" class="underline">terms of service</a></p>
+    </main>
 
 </body>
 
