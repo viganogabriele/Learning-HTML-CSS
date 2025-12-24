@@ -1,16 +1,3 @@
-/* Utility class to hide labels visually but keep them for screen readers */
-.sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border: 0;
-}
-
 /* Reset default margin and padding for all elements */
 *, *::before, *::after {
     box-sizing: border-box;
@@ -22,12 +9,21 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center;   /* Center orizzontaly because of the change of axis with flex-direction */
+    align-items: center;   /* Center horizontally */
+    font-family: "Inter", sans-serif;
+}
+
+.faq-header h1 {
+    font-weight: 600;
+    font-size: 2.25rem;
+    margin-bottom: 10px;
 }
 
 /* Add padding specifically to lists to make room for markers */
 .faq-list {
     padding-left: 18px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .faq-content, .faq-header {
@@ -35,7 +31,7 @@ body {
 }
 
 .faq-content {
-    background-color: grey;
+    background-color: #CBCBCB;
     flex-grow: 1;
 }
 
@@ -47,4 +43,38 @@ body {
 
 .faq-header .container {
     text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.faq-content .container {
+    padding-top: 20px;
+}
+
+.faq-item {
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.faq-item h2 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+p {
+    font-size: 1rem;
+}
+
+li {
+    margin-bottom: 10px;
 }
