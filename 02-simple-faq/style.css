@@ -31,12 +31,12 @@ body {
 }
 
 .faq-content {
-    background-color: #CBCBCB;
+    background-color: #f8f8f8e0;
     flex-grow: 1;
 }
 
 .container {
-    max-width: 700px;   /* Limits the width so it's not stretched across the screen */
+    max-width: 700px;   /* Limits the width so/home/gabriele/dev/Learning-HTML-CSS/02-simple-faq/index.html it's not stretched across the screen */
     padding: 20px;   /* Adds some internal space so text doesn't touch the borders */
     margin: 0 auto;
 }
@@ -77,4 +77,10 @@ p {
 
 li {
     margin-bottom: 10px;
+}
+
+hr {
+    border: 0;          
+    height: 1px;        
+    background: #e0e0e0;
 }
