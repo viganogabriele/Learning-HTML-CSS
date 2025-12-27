@@ -1,3 +1,98 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
 body {
+    min-height: 100vh;
     font-family: "Roboto", sans-serif;
+}
+
+.image-container {
+    width: 100%;
+    max-width: 35px;
+    margin: 100px auto 30px;
+}
+
+.responsive-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.title {
+    text-align: center;
+    font-size: 42px;
+}
+
+
+.description {
+    text-align: center;
+    width: 600px;
+    margin: 25px auto 70px;
+    color: rgb(99, 99, 99);
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+.form-item {
+    display: block;
+    border-radius: 12px;
+    padding: 15px 0;
+    width: 410px;
+    border: none;
+    outline: none;
+}
+
+.email-input {
+    margin: 0 auto ;
+    text-align: center;
+    background-color: rgb(247, 247, 247);
+    border: 1px solid rgb(233, 233, 233); 
+}
+
+.email-input:focus {
+    border-color: rgb(78, 89, 246);
+    background-color: white;
+    box-shadow: 0 0 0 3px rgba(78, 89, 246, 0.1);
+}
+
+.button-subscribe {
+    margin: 20px auto;
+    color: white;
+    background-color: rgb(78, 89, 246);
+    font-weight: bold;
+    padding: 16px 0;
+}
+
+.button-subscribe:hover {
+    background-color: rgb(60, 70, 220);
+    cursor: pointer;
+}
+
+.form-container {
+    width: 450px;
+    box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.03), 0px 8px 12px 0px rgba(0, 0, 0, 0.08);
+    margin: 0 auto;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.form-container p {
+    text-align: center;
+    font-size: 12px;
+    color: rgb(159, 159, 159); 
 }
