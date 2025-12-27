@@ -19,13 +19,13 @@
 body {
     min-height: 100vh;
     font-family: "Roboto", sans-serif;
-    padding: 0 20px;
+    padding: 0 1.25rem;
 }
 
-.image-container {
+.logo-container {
     width: 100%;
     max-width: 35px;
-    margin: 100px auto 30px;
+    margin: 6.25rem auto 1.875rem;
 }
 
 .responsive-image {
@@ -34,27 +34,27 @@ body {
     display: block;
 }
 
-.title {
+.newsletter-title {
     text-align: center;
-    font-size: 42px;
+    font-size: 2.625rem;
 }
 
 
-.description {
+.newsletter-description {
     text-align: center;
-    max-width: 600px;
-    margin: 25px auto 70px;
+    max-width: 37.5rem;
+    margin: 1.5625rem auto 4.375rem;
     color: rgb(99, 99, 99);
     line-height: 1.5;
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 
-.form-item {
+.form-field {
     display: block;
-    border-radius: 12px;
-    padding: 15px 0;
+    border-radius: 0.75rem;
+    padding: 0.9375rem 0;
     width: 100%;
-    max-width: 410px;
+    max-width: 25.625rem;
     border: none;
     outline: none;
 }
@@ -63,7 +63,8 @@ body {
     margin: 0 auto ;
     text-align: center;
     background-color: rgb(247, 247, 247);
-    border: 1px solid rgb(233, 233, 233); 
+    border: 1px solid rgb(233, 233, 233);
+    transition: all 0.3s ease;
 }
 
 .email-input:focus {
@@ -73,11 +74,12 @@ body {
 }
 
 .button-subscribe {
-    margin: 20px auto;
+    margin: 1.25rem auto;
     color: white;
     background-color: rgb(78, 89, 246);
     font-weight: bold;
-    padding: 16px 0;
+    padding: 1rem 0;
+    transition: all 0.3s ease;
 }
 
 .button-subscribe:hover {
@@ -86,31 +88,35 @@ body {
 }
 
 .form-container {
-    max-width: 450px;
+    max-width: 28.125rem;
     width: 100%;
     box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.03), 0px 8px 12px 0px rgba(0, 0, 0, 0.08);
     margin: 0 auto;
-    border-radius: 12px;
-    padding: 20px;
+    border-radius: 0.75rem;
+    padding: 1.25rem;
 }
 
 .form-container p {
     text-align: center;
-    font-size: 12px;
+    font-size: 0.75rem;
     color: rgb(159, 159, 159); 
 }
 
-@media (max-width: 768px) {
-    .title {
-        font-size: 32px;
+.button-subscribe:active {
+    transform: scale(0.98);
+}
+
+@media (max-width: 48em) {
+    .newsletter-title {
+        font-size: 2rem;
     }
 
-    .description {
-        font-size: 16px;
-        margin: 20px auto 50px;
+    .newsletter-description {
+        font-size: 1rem;
+        margin: 1.25rem auto 3.125rem;
     }
 
-    .form-item {
+    .form-field {
         max-width: 100%;
     }
 }
