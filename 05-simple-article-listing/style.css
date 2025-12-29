@@ -24,6 +24,10 @@ h1 {
     font-weight: 600;
 }
 
+main {
+    padding: 0 10px;
+}
+
 .divider {
     color: rgb(191, 191, 191);
 }
