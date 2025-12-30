@@ -1,86 +1,89 @@
 /* Reset default margin and padding for all elements */
-*, *::before, *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;   /* Center horizontally */
-    font-family: "Inter", sans-serif;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center; /* Center horizontally */
+	font-family: "Inter", sans-serif;
 }
 
 .faq-header h1 {
-    font-weight: 600;
-    font-size: 2.25rem;
-    margin-bottom: 10px;
+	font-weight: 600;
+	font-size: 2.25rem;
+	margin-bottom: 10px;
 }
 
 /* Add padding specifically to lists to make room for markers */
 .faq-list {
-    padding-left: 18px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+	padding-left: 18px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
-.faq-content, .faq-header {
-    width: 100%;   /* Makes it responsive: takes 100% on small screens, stops at 700px on big ones */
+.faq-content,
+.faq-header {
+	width: 100%; /* Makes it responsive: takes 100% on small screens, stops at 700px on big ones */
 }
 
 .faq-content {
-    background-color: #f8f8f8e0;
-    flex-grow: 1;
+	background-color: #f8f8f8e0;
+	flex-grow: 1;
 }
 
 .container {
-    max-width: 700px;   /* Limits the width so/home/gabriele/dev/Learning-HTML-CSS/02-simple-faq/index.html it's not stretched across the screen */
-    padding: 20px;   /* Adds some internal space so text doesn't touch the borders */
-    margin: 0 auto;
+	max-width: 700px; /* Limits the width so/home/gabriele/dev/Learning-HTML-CSS/02-simple-faq/index.html it's not stretched across the screen */
+	padding: 20px; /* Adds some internal space so text doesn't touch the borders */
+	margin: 0 auto;
 }
 
 .faq-header .container {
-    text-align: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 50px;
 }
 
 .faq-content .container {
-    padding-top: 20px;
+	padding-top: 20px;
 }
 
 .faq-item {
-    padding-top: 35px;
-    padding-bottom: 35px;
+	padding-top: 35px;
+	padding-bottom: 35px;
 }
 
 .faq-item h2 {
-    font-size: 1.5rem;
-    margin-bottom: 30px;
+	font-size: 1.5rem;
+	margin-bottom: 30px;
 }
 
 a {
-    text-decoration: none;
-    color: #007bff;
+	text-decoration: none;
+	color: #007bff;
 }
 
 a:hover {
-    text-decoration: underline;
-    color: #0056b3;
+	text-decoration: underline;
+	color: #0056b3;
 }
 
 p {
-    font-size: 1rem;
+	font-size: 1rem;
 }
 
 li {
-    margin-bottom: 10px;
+	margin-bottom: 10px;
 }
 
 hr {
-    border: 0;          
-    height: 1px;        
-    background: #e0e0e0;
+	border: 0;
+	height: 1px;
+	background: #e0e0e0;
 }

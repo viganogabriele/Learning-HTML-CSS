@@ -1,98 +1,100 @@
 /* We define variables here to reuse colors easily */
 :root {
-    --primary-black: #121212;
-    --primary-white: #ffffff;
+	--primary-black: #121212;
+	--primary-white: #ffffff;
 }
 
 /* Utility class to hide labels visually but keep them for screen readers */
 .sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border: 0;
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border: 0;
 }
 
 /* Reset default margin and padding for all elements */
-*, *::before, *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 body {
-    font-family: "Roboto", sans-serif;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	font-family: "Roboto", sans-serif;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    width: 90%;
-    max-width: 500px; 
-    min-height: 600px;
-    border: 3px solid var(--primary-black);
-    padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+	width: 90%;
+	max-width: 500px;
+	min-height: 600px;
+	border: 3px solid var(--primary-black);
+	padding: 20px;
 }
 
 .newsletter-title {
-    color: var(--primary-black);
-    padding-top: 10px;
+	color: var(--primary-black);
+	padding-top: 10px;
 }
 
 .newsletter-banner {
-    border: 2px solid var(--primary-black)  ;
+	border: 2px solid var(--primary-black);
 }
 
 .field-base {
-    line-height: 1.5;
-    width: 100%;
-    max-width: 300px;
-    padding: 10px 20px;
-    border: 3px solid var(--primary-black);
-    font-family: inherit;
-    font-size: 1rem;
+	line-height: 1.5;
+	width: 100%;
+	max-width: 300px;
+	padding: 10px 20px;
+	border: 3px solid var(--primary-black);
+	font-family: inherit;
+	font-size: 1rem;
 }
 
 .newsletter-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 15px;
 }
 .newsletter-btn {
-    background-color: var(--primary-black);
-    color: var(--primary-white);
-    font-weight: bold;
-    cursor: pointer;
+	background-color: var(--primary-black);
+	color: var(--primary-white);
+	font-weight: bold;
+	cursor: pointer;
 }
 
 .newsletter-input {
-    color: var(--primary-black);
-    background-color: var(--primary-white);
-    text-align: center;
+	color: var(--primary-black);
+	background-color: var(--primary-white);
+	text-align: center;
 }
 
 .underline {
-    text-decoration: underline;
+	text-decoration: underline;
 }
 
 .terms-text {
-    font-style: italic;
-    text-align: center;
+	font-style: italic;
+	text-align: center;
 }
 
 .responsive-content {
-    width: 100%;
-    max-width: 350px;
-    height: auto;
+	width: 100%;
+	max-width: 350px;
+	height: auto;
 }

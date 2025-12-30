@@ -1,124 +1,127 @@
-*, *::before, *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 .sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border-width: 0;
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border-width: 0;
 }
 
 body {
-    min-height: 100vh;
-    font-family: "Roboto", sans-serif;
-    padding: 0 1.25rem;
-    display: flex;
-    flex-direction: column;
+	min-height: 100vh;
+	font-family: "Roboto", sans-serif;
+	padding: 0 1.25rem;
+	display: flex;
+	flex-direction: column;
 }
 
 .logo-container {
-    width: 100%;
-    max-width: 35px;
-    margin: 6.25rem auto 1.875rem;
+	width: 100%;
+	max-width: 35px;
+	margin: 6.25rem auto 1.875rem;
 }
 
 .responsive-image {
-    width: 100%;
-    height: auto;
-    display: block;
+	width: 100%;
+	height: auto;
+	display: block;
 }
 
 .newsletter-title {
-    text-align: center;
-    font-size: 2.625rem;
+	text-align: center;
+	font-size: 2.625rem;
 }
 
-
 .newsletter-description {
-    text-align: center;
-    max-width: 37.5rem;
-    margin: 1.5625rem auto 4.375rem;
-    color: rgb(99, 99, 99);
-    line-height: 1.5;
-    font-size: 1.125rem;
+	text-align: center;
+	max-width: 37.5rem;
+	margin: 1.5625rem auto 4.375rem;
+	color: rgb(99, 99, 99);
+	line-height: 1.5;
+	font-size: 1.125rem;
 }
 
 .form-field {
-    display: block;
-    border-radius: 0.75rem;
-    padding: 0.9375rem 0;
-    width: 100%;
-    max-width: 25.625rem;
-    border: none;
-    outline: none;
+	display: block;
+	border-radius: 0.75rem;
+	padding: 0.9375rem 0;
+	width: 100%;
+	max-width: 25.625rem;
+	border: none;
+	outline: none;
 }
 
 .email-input {
-    margin: 0 auto ;
-    text-align: center;
-    background-color: rgb(247, 247, 247);
-    border: 1px solid rgb(233, 233, 233);
-    transition: all 0.3s ease;
+	margin: 0 auto;
+	text-align: center;
+	background-color: rgb(247, 247, 247);
+	border: 1px solid rgb(233, 233, 233);
+	transition: all 0.3s ease;
 }
 
 .email-input:focus {
-    border-color: rgb(78, 89, 246);
-    background-color: white;
-    box-shadow: 0 0 0 3px rgba(78, 89, 246, 0.1);
+	border-color: rgb(78, 89, 246);
+	background-color: white;
+	box-shadow: 0 0 0 3px rgba(78, 89, 246, 0.1);
 }
 
 .button-subscribe {
-    margin: 1.25rem auto;
-    color: white;
-    background-color: rgb(78, 89, 246);
-    font-weight: bold;
-    padding: 1rem 0;
-    transition: all 0.3s ease;
+	margin: 1.25rem auto;
+	color: white;
+	background-color: rgb(78, 89, 246);
+	font-weight: bold;
+	padding: 1rem 0;
+	transition: all 0.3s ease;
 }
 
 .button-subscribe:hover {
-    background-color: rgb(60, 70, 220);
-    cursor: pointer;
+	background-color: rgb(60, 70, 220);
+	cursor: pointer;
 }
 
 .form-container {
-    max-width: 28.125rem;
-    width: 100%;
-    box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.03), 0px 8px 12px 0px rgba(0, 0, 0, 0.08);
-    margin: 0 auto;
-    border-radius: 0.75rem;
-    padding: 1.25rem;
+	max-width: 28.125rem;
+	width: 100%;
+	box-shadow:
+		0px 20px 30px 0px rgba(0, 0, 0, 0.03),
+		0px 8px 12px 0px rgba(0, 0, 0, 0.08);
+	margin: 0 auto;
+	border-radius: 0.75rem;
+	padding: 1.25rem;
 }
 
 .form-container p {
-    text-align: center;
-    font-size: 0.75rem;
-    color: rgb(159, 159, 159); 
+	text-align: center;
+	font-size: 0.75rem;
+	color: rgb(159, 159, 159);
 }
 
 .button-subscribe:active {
-    transform: scale(0.98);
+	transform: scale(0.98);
 }
 
 @media (max-width: 48em) {
-    .newsletter-title {
-        font-size: 2rem;
-    }
+	.newsletter-title {
+		font-size: 2rem;
+	}
 
-    .newsletter-description {
-        font-size: 1rem;
-        margin: 1.25rem auto 3.125rem;
-    }
+	.newsletter-description {
+		font-size: 1rem;
+		margin: 1.25rem auto 3.125rem;
+	}
 
-    .form-field {
-        max-width: 100%;
-    }
+	.form-field {
+		max-width: 100%;
+	}
 }
