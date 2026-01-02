@@ -6,16 +6,49 @@
 	padding: 0;
 }
 
+:root {
+	--color-bg: #fafaf9;
+	--color-text: #18181b;
+	--color-muted: #52525a;
+	--color-card: #ffffff;
+	--color-accent: #fda44c;
+	--shadow-card: 0px 30px 100px 0px rgba(17, 23, 41, 0.05);
+	--radius-card: 10px;
+	--space-2: 12px;
+	--space-3: 20px;
+	--space-4: 30px;
+	--space-5: 40px;
+	--font-base: 16px;
+	--font-small: 14px;
+	--font-md: 18px;
+	--font-lg: 20px;
+	--line-base: 1.7;
+}
+
 body {
-	background-color: #fafaf9;
+	background-color: var(--color-bg);
 	min-height: 100vh;
 	font-family: "Sora", sans-serif;
-	color: #18181b;
+	color: var(--color-text);
+	font-size: var(--font-base);
+	line-height: var(--line-base);
+}
+
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border: 0;
 }
 
 .hero-star {
-	background-color: #fda44c;
-	padding: 12px;
+	background-color: var(--color-accent);
+	padding: var(--space-2);
 	border-radius: 50%;
 	width: 40px;
 	height: 40px;
@@ -29,7 +62,7 @@ body {
 	width: 100%;
 	justify-content: space-around;
 	align-items: center;
-	padding: 0 40px;
+	padding: 0 var(--space-5);
 }
 
 li {
@@ -46,15 +79,15 @@ header {
 
 header p {
 	max-width: 550px;
-	line-height: 1.7;
-	font-size: 20px;
-	color: #52525a;
+	line-height: var(--line-base);
+	font-size: var(--font-lg);
+	color: var(--color-muted);
 }
 
 .hero-content {
 	display: flex;
 	flex-direction: column;
-	gap: 20px;
+	gap: var(--space-3);
 }
 
 .checklist {
@@ -63,8 +96,8 @@ header p {
 
 .checklist span {
 	max-width: 500px;
-	font-size: 14px;
-	color: #52525a;
+	font-size: var(--font-small);
+	color: var(--color-muted);
 }
 
 .checklist img {
@@ -75,17 +108,17 @@ header p {
 	display: flex;
 	flex-direction: column;
 	gap: 40px;
-	width: 500px;
+	width: 600px;
 }
 
 .testimonial-card {
 	display: flex;
 	flex-direction: column;
 	gap: 5px;
-	background-color: #ffffff;
-	box-shadow: 0px 30px 100px 0px rgba(17, 23, 41, 0.05);
-	border-radius: 10px;
-	padding: 30px 40px;
+	background-color: var(--color-card);
+	box-shadow: var(--shadow-card);
+	border-radius: var(--radius-card);
+	padding: var(--space-4) var(--space-5);
 }
 
 .card-brand {
@@ -114,15 +147,15 @@ header p {
 	height: 40px;
 }
 
-.testimonial-card p {
-	color: #52525a;
-	line-height: 1.7;
+.testimonial-card blockquote {
+	color: var(--color-muted);
+	line-height: var(--line-base);
 	max-width: 280px;
 }
 
 .testimonial-card h2 {
 	font-weight: 600;
-	font-size: 18px;
+	font-size: var(--font-md);
 	margin-top: 10px;
 }
 
