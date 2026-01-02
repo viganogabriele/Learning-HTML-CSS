@@ -31,7 +31,6 @@ body {
 	font-family: "Sora", sans-serif;
 	color: var(--color-text);
 	font-size: var(--font-base);
-	line-height: var(--line-base);
 }
 
 .sr-only {
@@ -65,7 +64,7 @@ body {
 	padding: 0 var(--space-5);
 }
 
-li {
+.checklist li {
 	display: flex;
 	align-items: center;
 	gap: 10px;
@@ -101,7 +100,7 @@ header p {
 }
 
 .checklist img {
-	align-self: flex-start;
+	flex-shrink: 0;
 }
 
 .testimonials-wrapper {
