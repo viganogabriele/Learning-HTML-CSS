@@ -6,14 +6,26 @@
   padding: 0;
 }
 
+:root {
+  --color-text: #18181b;
+  --color-muted: #52525a;
+  --shadow-card: 0px 30px 100px 0px rgba(17, 23, 41, 0.05);
+  --radius-card: 10px;
+}
+
+body {
+  color: var(--color-text);
+  font-family: "Montserrat", sans-serif;
+}
+
 .card {
   display: flex;
   flex-direction: column;
   width: 500px;
   margin: 100px auto;
   overflow: hidden;
-  border-radius: 10px;
-  box-shadow: 0px 30px 100px 0px rgba(17, 23, 41, 0.05);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
 }
 
 .card-body {
@@ -23,6 +35,8 @@
 
 .card-footer {
   display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
 .author-details {
@@ -38,4 +52,26 @@
   width: 100%;
   display: block;
   object-fit: cover;
+}
+
+.author-avatar {
+  width: 60px;
+  display: block;
+  object-fit: cover;
+}
+
+.card-description,
+.author-role {
+  color: var(--color-muted);
+}
+
+hr {
+  margin: 25px 0;
+  border: var(--color-muted) 1px solid;
+  opacity: 4%;
+}
+
+.card-body,
+.card-footer {
+  padding: 0 30px;
 }
