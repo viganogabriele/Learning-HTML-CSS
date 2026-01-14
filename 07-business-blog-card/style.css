@@ -46,6 +46,7 @@ body {
 }
 
 .card-header {
+  position: relative;
   width: 100%;
 }
 
@@ -53,6 +54,15 @@ body {
   width: 100%;
   display: block;
   object-fit: cover;
+}
+
+.wave-separator {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .author-avatar {
@@ -79,7 +89,7 @@ hr {
 .card-body {
   display: flex;
   flex-direction: column;
-  padding-top: 40px;
+  padding-top: 10px;
   gap: 20px;
 }
 
