@@ -37,6 +37,7 @@ body {
   display: flex;
   align-items: center;
   gap: 15px;
+  padding-bottom: 25px;
 }
 
 .author-details {
@@ -78,12 +79,7 @@ body {
 
 hr {
   margin: 25px 0 35px;
-  border: var(--color-muted) 1px solid;
-  opacity: 4%;
-}
-
-.card-footer {
-  padding-bottom: 25px;
+  border: 1px solid rgba(82, 82, 90, 0.1);
 }
 
 .card-body {
