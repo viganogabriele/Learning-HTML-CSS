@@ -8,7 +8,8 @@
 
 body {
     height: 100vh;
-    color: rgb(103, 103, 103);
+    font-family: "Poppins", sans-serif;
+    color: rgb(255, 255, 255);
 }
 
 main {
@@ -25,20 +26,71 @@ main {
     height: auto;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: rgb(224, 224, 224);
 }
 
 .intro {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
     grid-column: span 2;
+    padding: 30px;
+    color: black;
 }
 
 .card {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
-    padding: 20px ;
+    padding: 10px ;
     background-size: cover;
     aspect-ratio: 1/1;
+    background-image: linear-gradient(to top, #00000033, transparent 20%);
+}
+
+.card::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to top, #0000008F, transparent 30%);
+}
+
+.card * {
+    z-index: 1;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 12px;
+}
+
+p {
+    font-size: 12px;
+}
+
+.intro span{
+    font-size: 12px;
+    color: blue;
+}
+
+.intro p {
+    margin-top: 5px;
+    color: rgb(54, 54, 54);
+}
+
+.card p {
+    font-size: 10px
 }
 
 .liam {
